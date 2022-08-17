@@ -7,7 +7,7 @@
     tools:context=".sign_up">
 
     <TextView
-        android:id="@+id/signup_headig"
+        android:id="@+id/signup_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_headig" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_heading" />
 
     <EditText
         android:id="@+id/signup_email"
@@ -47,16 +47,16 @@
 
     <EditText
         android:id="@+id/signup_password1"
-        android:hint="Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
-        android:padding="10dp"
         android:background="@drawable/edit_text_border"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
 
     <EditText
         android:id="@+id/signup_password2"
-        android:hint="Password"
+        android:hint="Confirm Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
