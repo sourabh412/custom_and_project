@@ -24,7 +24,7 @@ public class sign_up extends AppCompatActivity {
         signup_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(sign_up.this, dashboard.class);
+                Intent intent = new Intent(sign_up.this, home.class);
                 startActivity(intent);
                 finish();
             }
