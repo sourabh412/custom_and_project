@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/dashboard_heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
@@ -28,7 +28,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/dashboard_menu_icon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -37,7 +37,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/dashboard_img"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="10dp"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/dashboard_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -56,17 +56,17 @@
         android:text="My Name"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/dashboard_img"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/dashboard_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="myname.is20@bmsce.ac.in"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/dashboard_name"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_name" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -80,10 +80,10 @@
         android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_img">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/dashboard_news_head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
@@ -96,7 +96,7 @@
             android:layout_height="150dp">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/dashboard_news_info"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="News and information about college events"
@@ -120,6 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <SearchView
+            android:id="@+id/dashboard_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -136,7 +137,7 @@
                 >
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/dashboard_reviews_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name"
@@ -146,7 +147,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/dashboard_reviews_review"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Reviews or suggetions form some alumni or senior"
@@ -155,7 +156,7 @@
                     android:layout_marginBottom="10dp"/>
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/dashboard_reviews_name1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name"
@@ -165,7 +166,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/dashboard_reviews_review1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Reviews or suggetions form some alumni or senior"
