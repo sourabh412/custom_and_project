@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class home extends AppCompatActivity {
 
     ImageView home_menu_icon;
+    LinearLayout home_view_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,8 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.home);
 
         home_menu_icon = findViewById(R.id.home_menu_icon);
+        home_view_profile = findViewById(R.id.home_view_profile);
+
         home_menu_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +50,14 @@ public class home extends AppCompatActivity {
                     }
                 });
                 popupMenu.show();
+            }
+        });
+
+        home_view_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this, profile.class);
+                startActivity(intent);
             }
         });
     }

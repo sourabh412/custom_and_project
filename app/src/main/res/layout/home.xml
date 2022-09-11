@@ -67,26 +67,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/home_post_img"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="3dp"
-                    android:layout_weight="1"
-                    android:background="#d3eaf2"
-                    app:srcCompat="@drawable/bmslogo" />
+                <LinearLayout
+                    android:id="@+id/home_view_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/home_post_img"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="1"
+                        android:background="#d3eaf2"
+                        app:srcCompat="@drawable/bmslogo" />
+
+                    <TextView
+                        android:id="@+id/home_post_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="3"
+                        android:background="#d3eaf2"
+                        android:text="Sourabh P H"
+                        android:textSize="24sp" />
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/home_post_name"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="3dp"
-                    android:layout_weight="3"
-                    android:background="#d3eaf2"
-                    android:text="Sourabh P H"
-                    android:textSize="24sp" />
+                    android:padding="5dp"
+                    android:text="Hello to all BMSCE students...\nReview from a former student of BMSCE.."
+                    android:textSize="18dp"
+                    />
             </LinearLayout>
 
         </LinearLayout>
