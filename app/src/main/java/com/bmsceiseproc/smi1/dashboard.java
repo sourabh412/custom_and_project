@@ -37,8 +37,7 @@ public class dashboard extends AppCompatActivity {
 
                             case R.id.popup_logout:
                                 Toast.makeText(dashboard.this, "Logged out...", Toast.LENGTH_SHORT).show();
-                                finish();
-                                System.exit(0);
+                                finishAffinity();
                                 return true;
 
                             default:

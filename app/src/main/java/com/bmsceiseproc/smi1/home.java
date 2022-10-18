@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class home extends AppCompatActivity {
 
     ImageView home_menu_icon;
-    LinearLayout home_view_profile;
+    LinearLayout home_view_profile1, home_view_profile2, home_view_profile3, home_view_profile4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,10 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.home);
 
         home_menu_icon = findViewById(R.id.home_menu_icon);
-        home_view_profile = findViewById(R.id.home_view_profile);
+        home_view_profile1 = findViewById(R.id.home_view_profile1);
+        home_view_profile2 = findViewById(R.id.home_view_profile2);
+        home_view_profile3 = findViewById(R.id.home_view_profile3);
+        home_view_profile4 = findViewById(R.id.home_view_profile4);
 
         home_menu_icon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,8 +43,7 @@ public class home extends AppCompatActivity {
 
                             case R.id.popup_logout:
                                 Toast.makeText(home.this, "Logged out...", Toast.LENGTH_SHORT).show();
-                                finish();
-                                System.exit(0);
+                                finishAffinity();
                                 return true;
 
                             default:
@@ -53,7 +55,28 @@ public class home extends AppCompatActivity {
             }
         });
 
-        home_view_profile.setOnClickListener(new View.OnClickListener() {
+        home_view_profile1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this, profile.class);
+                startActivity(intent);
+            }
+        });
+        home_view_profile2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this, profile.class);
+                startActivity(intent);
+            }
+        });
+        home_view_profile3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this, profile.class);
+                startActivity(intent);
+            }
+        });
+        home_view_profile4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(home.this, profile.class);

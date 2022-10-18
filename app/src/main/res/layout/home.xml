@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:padding="5dp"
+            android:paddingStart="20dp"
             android:text="Home"
             android:textSize="32dp"
             android:textStyle="bold" />
@@ -60,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:paddingStart="20dp"
                 android:text="New Posts"
                 android:textSize="32sp"
                 android:textStyle="bold" />
@@ -67,13 +69,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="5dp"
+                android:layout_marginVertical="5dp">
 
                 <LinearLayout
-                    android:id="@+id/home_view_profile"
+                    android:id="@+id/home_view_profile1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds">
 
                     <ImageView
                         android:id="@+id/home_post_img"
@@ -90,6 +96,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="3dp"
                         android:layout_weight="3"
+                        android:paddingVertical="10dp"
                         android:background="#d3eaf2"
                         android:text="Sourabh P H"
                         android:textSize="24sp" />
@@ -99,6 +106,142 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="Hello to all BMSCE students...\nReview from a former student of BMSCE.."
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="5dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:id="@+id/home_view_profile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds">
+
+                    <ImageView
+                        android:id="@+id/home_post_img"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="1"
+                        android:background="#d3eaf2"
+                        app:srcCompat="@drawable/bmslogo" />
+
+                    <TextView
+                        android:id="@+id/home_post_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="3"
+                        android:paddingVertical="10dp"
+                        android:background="#d3eaf2"
+                        android:text="Sankalp F"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="Hello to all BMSCE students...\nReview from a former student of BMSCE.."
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="5dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:id="@+id/home_view_profile3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds">
+
+                    <ImageView
+                        android:id="@+id/home_post_img"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="1"
+                        android:background="#d3eaf2"
+                        app:srcCompat="@drawable/bmslogo" />
+
+                    <TextView
+                        android:id="@+id/home_post_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="3"
+                        android:paddingVertical="10dp"
+                        android:background="#d3eaf2"
+                        android:text="Rakshit S"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
+                    android:text="Hello to all BMSCE students...\nReview from a former student of BMSCE.."
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="5dp"
+                android:layout_marginVertical="5dp">
+
+                <LinearLayout
+                    android:id="@+id/home_view_profile4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="DuplicateIds">
+
+                    <ImageView
+                        android:id="@+id/home_post_img"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="1"
+                        android:background="#d3eaf2"
+                        app:srcCompat="@drawable/bmslogo" />
+
+                    <TextView
+                        android:id="@+id/home_post_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="3"
+                        android:paddingVertical="10dp"
+                        android:background="#d3eaf2"
+                        android:text="Rachana S"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingStart="50dp"
                     android:text="Hello to all BMSCE students...\nReview from a former student of BMSCE.."
                     android:textSize="18dp"
                     />
